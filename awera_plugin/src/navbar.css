@@ -1,0 +1,105 @@
+.navbar {
+    height: 50px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 10px 20px;
+    position: sticky;
+    top: 10px;
+    background-color: #33333362;
+    backdrop-filter: blur(10px);
+    color: white;
+    border-radius: 20px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.menu-toggle {
+    height: 40px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    background-color: #d7d7d7;
+    border-radius: 15px
+}
+
+.menu-toggle span {
+    height: 5px;
+    width: 100%;
+    background-color: #171717;
+}
+
+.mobile-menu {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 20px;
+  position: fixed;
+  top: 80px;
+  background-color: #d7d7d7;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 30px;
+  display: none;
+}
+
+.mobile-menu button{
+    background-color: transparent;
+    border: none;
+    color: #171717;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.mobile-menu button:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-links {
+      display: none;
+    }
+    
+}
+
+@media screen and (min-width: 800px) {
+  .navbar {
+    width: 95%;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .navbar a:hover {
+    background-color: #575757;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+    
+}

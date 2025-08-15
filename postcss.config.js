@@ -1,5 +1,6 @@
-
-
-cd C:\Users\HP-PC\kullen-app
-
-
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
